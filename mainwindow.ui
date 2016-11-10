@@ -10,8 +10,20 @@
     <height>319</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>1029</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1029</width>
+    <height>16777215</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>Visor de Histórico de Eventos SBU</string>
+   <string>Event Viewer</string>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -20,6 +32,12 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QTableWidget" name="tableWidget">
+      <property name="maximumSize">
+       <size>
+        <width>1011</width>
+        <height>1000</height>
+       </size>
+      </property>
       <property name="styleSheet">
        <string notr="true"/>
       </property>
@@ -33,7 +51,7 @@
        <number>0</number>
       </property>
       <property name="columnCount">
-       <number>9</number>
+       <number>5</number>
       </property>
       <attribute name="horizontalHeaderDefaultSectionSize">
        <number>98</number>
@@ -41,10 +59,6 @@
       <attribute name="horizontalHeaderStretchLastSection">
        <bool>true</bool>
       </attribute>
-      <column/>
-      <column/>
-      <column/>
-      <column/>
       <column/>
       <column/>
       <column/>
@@ -68,6 +82,9 @@
      <string>Archivo</string>
     </property>
     <addaction name="actionAbrir_archivo"/>
+    <addaction name="actionAbrir_carpeta"/>
+    <addaction name="separator"/>
+    <addaction name="actionDownload_Event_Files"/>
     <addaction name="separator"/>
     <addaction name="actionSalir"/>
    </widget>
@@ -83,22 +100,50 @@
   </widget>
   <action name="actionAbrir_archivo">
    <property name="text">
-    <string>Abrir archivo...</string>
+    <string>Open File...</string>
+   </property>
+   <property name="toolTip">
+    <string>Open File</string>
    </property>
   </action>
   <action name="actionSalir">
    <property name="text">
-    <string>Salir</string>
+    <string>Exit</string>
+   </property>
+   <property name="toolTip">
+    <string>Exit</string>
    </property>
   </action>
   <action name="actionCopiar">
    <property name="text">
-    <string>Copiar</string>
+    <string>Copy</string>
+   </property>
+   <property name="toolTip">
+    <string>Copy</string>
    </property>
   </action>
   <action name="actionExportar_a_Excel_2010">
    <property name="text">
-    <string>Exportar a Excel 2010</string>
+    <string>Export to  Excel 2010</string>
+   </property>
+   <property name="toolTip">
+    <string>Export to  Excel 2010</string>
+   </property>
+  </action>
+  <action name="actionAbrir_carpeta">
+   <property name="text">
+    <string>Open Folder...</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Folder</string>
+   </property>
+  </action>
+  <action name="actionDownload_Event_Files">
+   <property name="text">
+    <string>Download Event Files</string>
+   </property>
+   <property name="toolTip">
+    <string>Download Event Files</string>
    </property>
   </action>
  </widget>

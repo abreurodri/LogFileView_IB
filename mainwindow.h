@@ -22,6 +22,13 @@ private slots:
 
     void on_actionExportar_a_Excel_2010_triggered();
 
+    void on_actionAbrir_carpeta_triggered();
+
+    void on_actionDownload_Event_Files_triggered();
+
+private:
+    void insert_histfile_on_table(QString const& filePath, int rowPos);
+
 private:
     Ui::MainWindow *ui;
 };
